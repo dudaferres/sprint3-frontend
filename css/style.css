@@ -1,0 +1,573 @@
+:root {
+    --primary-blue: #1e88e5;
+    --primary-green: #43a047;
+    --primary-red: #e53935;
+    --secondary-blue: #90caf9;
+    --secondary-green: #a5d6a7;
+    --secondary-red: #ef9a9a;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 56px;
+}
+
+/* Espaçamento entre seções */
+section {
+    padding: 100px 0;
+}
+
+section.bg-light {
+    background-color: #f8f9fa;
+}
+
+section:not(:first-child) {
+    margin-top: 50px;
+}
+
+/* Header */
+.navbar {
+    background: linear-gradient(90deg, var(--secondary-green), var(--primary-green));
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.brand-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--secondary-blue);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-blue);
+    border-color: var(--secondary-blue);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(20deg, var(--secondary-blue), var(--primary-blue));
+    color: white;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+
+.hero-section h1 {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-section .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.hero-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: transform 0.3s ease;
+}
+
+.hero-section img:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+/* Sobre o Projeto */
+.about-section {
+    padding: 100px 0;
+}
+
+.about-section .lead {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    background: white;
+    margin-bottom: 30px;
+}
+
+.about-section .card:nth-child(1) {
+    border-top: 4px solid var(--primary-blue);
+}
+
+.about-section .card:nth-child(2) {
+    border-top: 4px solid var(--primary-green);
+}
+
+.about-section .card:nth-child(3) {
+    border-top: 4px solid var(--primary-red);
+}
+
+.about-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.about-section .card-header {
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    color: white;
+    padding: 20px;
+    border: none;
+}
+
+.about-section .card-title {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.about-section .card-text {
+    color: #666;
+}
+
+/* Serviços */
+.service-section {
+    padding: 100px 0;
+}
+
+.service-card {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card i {
+    color: var(--primary-blue);
+}
+
+/* Portfólio */
+.portfolio-section {
+    padding: 100px 0;
+}
+
+.carousel {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f8f9fa;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
+    background-color: #f8f9fa;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 10%;
+    bottom: 20px;
+    left: 10%;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    background: var(--primary-blue);
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-caption h5 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.carousel-caption p {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+    opacity: 0.8;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--primary-blue);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+/* Contato */
+.contact-section {
+    padding: 100px 0;
+}
+
+.contact-info i {
+    color: var(--primary-blue);
+    margin-right: 10px;
+}
+
+.social-links a {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, var(--primary-green), var(--secondary-green));
+    color: white;
+    padding: 80px 0 20px;
+    margin-top: 100px;
+}
+
+footer h4 {
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+footer h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary-blue);
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    margin-bottom: 10px;
+}
+
+footer nav ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+#newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+#newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background: white;
+}
+
+#newsletter-form button {
+    padding: 8px 20px;
+    background-color: #2196F3;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#newsletter-form button:hover {
+    background-color: #1976D2;
+}
+
+.copyright {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.copyright p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+
+    section:not(:first-child) {
+        margin-top: 30px;
+    }
+
+    .hero-section {
+        padding: 80px 0;
+    }
+
+    footer {
+        padding: 60px 0 20px;
+        margin-top: 60px;
+    }
+
+    /* Header */
+    .navbar {
+        padding: 0.5rem;
+    }
+    
+    .navbar-brand img {
+        max-height: 40px;
+    }
+    
+    .brand-text {
+        font-size: 1.2rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section img {
+        max-width: 80%;
+        margin: 0 auto;
+        transform: none;
+    }
+    
+    /* Sobre */
+    .about-section .card {
+        margin-bottom: 1rem;
+    }
+    
+    /* Serviços */
+    .service-card {
+        margin-bottom: 1rem;
+    }
+    
+    /* Portfólio */
+    .carousel {
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .carousel-item {
+        height: auto;
+    }
+    
+    .carousel-item img {
+        max-height: 300px;
+        width: 100%;
+        object-fit: contain;
+    }
+    
+    .carousel-caption {
+        position: relative;
+        background: var(--primary-blue);
+        margin: 0;
+        max-width: 100%;
+        border-radius: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .carousel-caption h5 {
+        font-size: 1rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.875rem;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 15%;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        padding: 15px;
+    }
+    
+    .carousel-indicators {
+        bottom: auto;
+        top: 10px;
+    }
+    
+    /* Contato */
+    .contact-info {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    footer h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    footer nav ul {
+        text-align: center;
+    }
+    
+    #newsletter-form {
+        flex-direction: column;
+    }
+    
+    #newsletter-form input[type="email"] {
+        margin-bottom: 10px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+    
+    .carousel-item img {
+        max-height: 400px;
+    }
+    
+    .carousel-caption {
+        bottom: 30px;
+    }
+    
+    .service-card {
+        padding: 20px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .hero-section {
+        min-height: 100vh;
+    }
+    
+    .carousel-item img {
+        max-height: 600px;
+    }
+    
+    .service-card {
+        padding: 30px;
+    }
+} 
