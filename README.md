@@ -66,7 +66,7 @@ Sinta-se à vontade para contribuir com o projeto através de pull requests.
 
 Este projeto está sob a licença MIT. 
 
-## Integrantes
+## Integrantes do grupo
 
 - Gabriela Queiroga - RM 560035
 - Julia Sayuri Yokoo - RM 560541
