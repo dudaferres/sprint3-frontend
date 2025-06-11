@@ -120,7 +120,7 @@ section:not(:first-child) {
 }
 
 .hero-section .lead {
-  color: #3a8dde;
+  color: #003972;
   font-size: 1.25rem;
 }
 
@@ -145,21 +145,22 @@ section:not(:first-child) {
 /* Sobre o Projeto */
 .about-section,
 .problems-section,
-.mvv-section,
 .service-section,
 .portfolio-section,
-.contact-section {
+.contact-section,
+.devs-section {
   padding: 90px 0;
   position: relative;
 }
 
 .about-section:not(:first-child),
 .problems-section:not(:first-child),
-.mvv-section:not(:first-child),
 .service-section:not(:first-child),
 .portfolio-section:not(:first-child),
-.contact-section:not(:first-child) {
-  border-top: 1px solid #e3eaf3;
+.contact-section:not(:first-child),
+.devs-section:not(:first-child) {
+
+  border-top: none;
 }
 
 .about-section .lead {
@@ -590,10 +591,10 @@ footer nav ul li a:hover {
 
   .about-section,
   .problems-section,
-  .mvv-section,
   .service-section,
   .portfolio-section,
-  .contact-section {
+  .contact-section,
+  .devs-section {
     padding: 60px 0;
   }
 
