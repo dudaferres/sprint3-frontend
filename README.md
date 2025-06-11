@@ -19,14 +19,26 @@ frontend-sprint3/
 │   └── style.css
 ├── js/
 │   └── script.js
-└── img/
+└── assets/
     ├── logo.png
-    ├── hero-image.png
-    ├── about-image.jpg
-    ├── portfolio1.jpg
-    ├── portfolio2.jpg
-    └── portfolio3.jpg
+    ├── hospital-sabara.jpg
+    ├── inicial-page.png
+    ├── cardapio-page.png
+    ├── formula-page.png
+    ├── gabi.jpg
+    └── duda.jpg
 ```
+
+## Seções do Site
+
+- **Home**: Apresentação do projeto e objetivo principal.
+- **Problemas**: Principais desafios enfrentados na nutrição infantil hospitalar.
+- **Sobre o Projeto**: Missão, visão e valores da NutriKids AI.
+- **Serviços**: Funcionalidades oferecidas pela plataforma.
+- **Portfólio**: Protótipos e telas do sistema.
+- **Desenvolvedoras**: Fotos, nomes e profissões das responsáveis pelo projeto.
+- **Contato**: Formulário para contato e informações de redes sociais.
+- **Newsletter**: Assinatura para receber novidades.
 
 ## Funcionalidades
 
@@ -37,6 +49,7 @@ frontend-sprint3/
 - Cálculo de fórmula infantil
 - Carrossel de portfólio
 - Animações de scroll
+- Seção de desenvolvedoras com fotos
 
 ## Como Executar
 
@@ -49,10 +62,9 @@ As cores principais do site podem ser alteradas no arquivo `css/style.css` atrav
 
 ```css
 :root {
-    --primary-blue: #1e88e5;
-    --secondary-blue: #90caf9;
-    --secondary-green: #a5d6a7;
-    --secondary-red: #ef9a9a;
+  --primary-blue: #1e88e5;
+  --secondary-blue: #90caf9;
+  --tertiary-blue: #43a5fa;
 }
 ```
 
@@ -62,7 +74,7 @@ Sinta-se à vontade para contribuir com o projeto através de pull requests.
 
 ## Licença
 
-Este projeto está sob a licença MIT. 
+Este projeto está sob a licença MIT.
 
 ## Integrantes do grupo
 
