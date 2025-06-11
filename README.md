@@ -50,8 +50,6 @@ As cores principais do site podem ser alteradas no arquivo `css/style.css` atrav
 ```css
 :root {
     --primary-blue: #1e88e5;
-    --primary-green: #43a047;
-    --primary-red: #e53935;
     --secondary-blue: #90caf9;
     --secondary-green: #a5d6a7;
     --secondary-red: #ef9a9a;
@@ -69,5 +67,4 @@ Este projeto está sob a licença MIT.
 ## Integrantes do grupo
 
 - Gabriela Queiroga - RM 560035
-- Julia Sayuri Yokoo - RM 560541
 - Maria Eduarda Ferrés - RM 560418

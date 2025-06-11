@@ -1,10 +1,6 @@
 :root {
   --primary-blue: #1e88e5;
-  --primary-green: #43a047;
-  --primary-red: #e53935;
   --secondary-blue: #90caf9;
-  --secondary-green: #a5d6a7;
-  --secondary-red: #ef9a9a;
   --tertiary-blue: #43a5fa;
 }
 
@@ -180,18 +176,6 @@ section:not(:first-child) {
   overflow: hidden;
   background: white;
   margin-bottom: 30px;
-}
-
-.about-section .card:nth-child(1) {
-  border-top: 4px solid var(--primary-blue);
-}
-
-.about-section .card:nth-child(2) {
-  border-top: 4px solid var(--primary-green);
-}
-
-.about-section .card:nth-child(3) {
-  border-top: 4px solid var(--primary-red);
 }
 
 .about-section .card:hover {
